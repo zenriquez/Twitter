@@ -10,6 +10,16 @@ class UserService {
         return [user.id, user.username, user.name, user.bio]
     }
 
+    //actualizar username
+    static updateUserUsername(user, name){
+        user.name = name;
+    }
+
+    //devuelve lista de usuarios
+    static getAllUsernames(users) {
+        return users.map(user=>user.name)
+    }
+
 }
 
 
